@@ -101,6 +101,10 @@ nav > div > a:first-child {
     border-radius: 10px;
   }
 
+  .burger-icon:hover {
+    color: white;
+  }
+
   .topnav.responsive {
     position: relative;
   }
