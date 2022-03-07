@@ -1,0 +1,48 @@
+/* varialbes */
+:root {
+  /* colors */
+  --bc1: #000;
+  --button1st: #e2e2e2;
+  --button2nd: #d74f41;
+
+  --body-font-size: calc(1rem + 6 * ((100vw - 320px) / 680));
+}
+
+/* reset */
+body,
+p,
+a,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* base styles */
+
+* {
+  box-sizing: border-box;
+  /* outline: 2px dotted red; */
+}
+main {
+  /*to center a div set the width of the element and set margin to auto*/
+  max-width: 30vw;
+  margin: auto;
+}
+
+/* fonts */
+
+/* mobil first styles */
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+}
+/* large tablets and laptop styles */
+@media screen and (min-width: 960px) {
+}
+
+/* destop styles */
+@media screen and (min-width: 1200px) {
+}
