@@ -1,10 +1,11 @@
 /* varialbes */
 :root {
   /* colors */
-  --bc1: #000;
-  --button1st: #e2e2e2;
-  --button2nd: #d74f41;
+  --bc1: #558960;
+  --bc2: #fffce8;
+  --secondary-button: #97252c;
 
+  /* I am still working in this formula to make responsive font */
   --body-font-size: calc(1rem + 6 * ((100vw - 320px) / 680));
 }
 
