@@ -37,17 +37,6 @@ main {
 
 /* mobil first styles */
 
-/* small tablet styles */
-@media screen and (min-width: 620px) {
-}
-/* large tablets and laptop styles */
-@media screen and (min-width: 960px) {
-}
-
-/* destop styles */
-@media screen and (min-width: 1200px) {
-}
-
 /* Navigation bar styles*/
 nav {
   display: flex;
@@ -86,6 +75,15 @@ nav > div > a {
 
 nav > div > a:first-child {
   margin-right: 15px;
+}
+
+
+
+/* small tablet styles */
+@media screen and (min-width: 620px) {
+}
+/* large tablets and laptop styles */
+@media screen and (min-width: 960px) {
 }
 
 @media screen and (max-width: 1000px) {
@@ -132,4 +130,8 @@ nav > div > a:first-child {
     color: white;
     font-size: 2.5rem;
   }
+}
+
+/* destop styles */
+@media screen and (min-width: 1200px) {
 }
