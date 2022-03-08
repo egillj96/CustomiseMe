@@ -8,14 +8,18 @@
   --secondary-button: #97252c;
 
   /* I am still working in this formula to make responsive font */
-  --body-font-size: calc(1rem + 6 * ((100vw - 320px) / 680));
+  --heading-1: calc(2rem + 1vw);
+  --heading-2: bold calc(1.5rem + 6 * ((100vw - 320px) / 680));
+  --heading-3: bold calc(1rem + 4 * ((100vw - 320px) / 680));
+  --body-font-size: calc(1rem + 1 * ((100vw - 320px) / 680));
 }
 
 /* reset */
 body,
 a,
 ul,
-li {
+li,
+h2 {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -75,15 +79,38 @@ nav > div > a:first-child {
   margin-right: 15px;
 }
 
+/* ---footer--- */
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 3% auto;
+  border-top: solid 1px var(--bc1);
+  padding-top: 5vw;
+}
+
+footer a {
+  color: var(--bc1);
+}
+
+/* ---headings--- */
 h1 {
   display: block;
   text-align: center;
+  font-size: var(--heading-1);
 }
+
+h2 {
+  font-size: var(--heading-2);
+}
+
 /* ---product list pages--- */
 
 #produtsContainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 10%;
   /*to center a div set the width of the element and set margin to auto*/
   max-width: 85%;
@@ -95,6 +122,7 @@ h1 {
 }
 .producTitle {
   margin-bottom: 0%;
+  font-size: var(--heading-2);
 }
 .desc {
   color: dimgray;
@@ -111,6 +139,21 @@ h1 {
 .hidden {
   display: none;
 }
+.buyButton {
+  color: #fffce8;
+  background-color: #558960;
+  padding: 12px 16px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid #558960;
+}
+
+.buyButton:hover {
+  background-color: #2e4e35;
+  border: 3px solid #2e4e35;
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   #customsoap .described {
@@ -242,8 +285,8 @@ h1 {
 
 .secondary-button-front {
   color: #fffce8;
-  padding: 20px 36px;
-  font-size: 1.3rem;
+  padding: 14px 30px;
+  font-size: 1rem;
   border-radius: 10px;
   border: 3px solid #fffce8;
 }
@@ -293,4 +336,6 @@ h1 {
 
 #about-front-container > div > div h3 {
   font-size: 2rem;
+  margin: 0;
+  line-height: 2.3rem;
 }
