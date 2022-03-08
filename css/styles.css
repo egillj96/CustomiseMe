@@ -83,6 +83,8 @@ nav > div > a:first-child {
 
 footer {
   display: flex;
+  flex: 1 1 20%;
+  flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-between;
   max-width: 90%;
@@ -108,7 +110,7 @@ h2 {
 
 /* ---product list pages--- */
 
-#produtsContainer {
+#produtsCont {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   gap: 10%;
@@ -146,6 +148,14 @@ h2 {
 .buyButton:hover {
   background-color: #2e4e35;
   border: 3px solid #2e4e35;
+}
+/* ---single product page--- */
+
+#singleCont {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 80%;
+  margin: 5% auto;
 }
 
 /* small tablet styles */
