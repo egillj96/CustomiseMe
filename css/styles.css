@@ -18,8 +18,7 @@
 body,
 a,
 ul,
-li,
-h2 {
+li {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -77,6 +76,11 @@ nav > div > a {
 
 nav > div > a:first-child {
   margin-right: 15px;
+}
+
+nav > div {
+  display: flex;
+  align-items: center;
 }
 
 /* ---footer--- */

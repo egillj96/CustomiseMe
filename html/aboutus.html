@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About us</title>
     <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/popup.css"/>
+    <link rel="stylesheet" href="../css/popup.css" />
     <script
       src="https://kit.fontawesome.com/137a8d32f0.js"
       crossorigin="anonymous"
@@ -16,11 +16,7 @@
     <header>
       <nav class="topnav">
         <a href="index.html">
-          <img
-            src="../images/customiseme-logo.svg"
-            alt="logo"
-            width="100"
-          />
+          <img src="../images/customiseme-logo.svg" alt="logo" width="100" />
         </a>
         <ul>
           <li><a href="products.html">Products</a></li>
@@ -28,48 +24,76 @@
           <li><a href="customise.html">Make a custom soap</a></li>
           <li><a href="about.html">About us</a></li>
         </ul>
-        <div>        
-         <!-- <a href="" onclick="document.getElementById('id01').style.display='block'" >Sign in</a> --> 
+        <div>
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+          >
+            Login
+          </button>
+          <!-- <a href="" onclick="document.getElementById('id01').style.display='block'" >Sign in</a> -->
           <!-- FIrst Div -->
-          
-<div>
-<!-- Button to open the modal login form -->
-<button onclick="document.getElementById('id01').style.display='block'">Login</button>
 
-<!-- The Modal -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" 
-class="close" title="Close Modal">&times;</span>
+          <div>
+            <!-- Button to open the modal login form -->
 
-  <!-- Modal Content -->
-  <form class="modal-content animate" action="/action_page.php">
-    <div class="imgcontainer">
-      <img src="../images/small_logo.svg" alt="Avatar" class="avatar">
-    </div>
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
 
-    <div class="container">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
+              <!-- Modal Content -->
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <img
+                    src="../images/small_logo.svg"
+                    alt="Avatar"
+                    class="avatar"
+                  />
+                </div>
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input
+                    type="text"
+                    placeholder="Enter Username"
+                    name="uname"
+                    required
+                  />
 
-      <button type="submit">Login</button>
-      <label>
-        <input type="checkbox" checked="checked" name="remember"> Remember me
-      </label>
-    </div>
+                  <label for="psw"><b>Password</b></label>
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required
+                  />
 
-    <div class="container" style="background-color:#f1f1f1">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="#">password?</a></span>
-    </div>
-  </form>
-</div>
-</div>
-<!-- 2 Div -->
-<div>
-    
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" />
+                    Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color: #f1f1f1">
+                  <button
+                    type="button"
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn"
+                  >
+                    Cancel
+                  </button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- 2 Div -->
+
           <a href="#" aria-label="cart"
             ><i class="fa-solid fa-cart-shopping fa-lg"></i
           ></a>
@@ -80,14 +104,10 @@ class="close" title="Close Modal">&times;</span>
           >
             <i class="fa fa-bars fa-2xl"></i>
           </a>
-</div>
         </div>
       </nav>
     </header>
-    <script src="js/navbar.js"></script>   
-    
-
-    
-</body>
-<script src="../js/popup.js"></script>
+  </body>
+  <script src="../js/navbar.js"></script>
+  <script src="../js/popup.js"></script>
 </html>
