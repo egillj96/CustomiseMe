@@ -104,9 +104,32 @@ h1 {
   color: var(--bc1);
   font-weight: bold;
 }
-
+/*custom soap page*/
+#customsoap .described {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  #customsoap .described {
+    display: grid;
+    margin: 2%;
+  }
+  .described h1 {
+    grid-column: 1/-1;
+  }
+  .described div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .described > div > img {
+    width: 14em;
+  }
+  .process {
+    display: grid;
+  }
 }
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
