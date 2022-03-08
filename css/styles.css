@@ -132,13 +132,7 @@ h2 {
   color: var(--bc1);
   font-weight: bold;
 }
-/*custom soap page*/
-#customsoap .described {
-  display: grid;
-}
-.hidden {
-  display: none;
-}
+
 .buyButton {
   color: #fffce8;
   background-color: #558960;
@@ -152,6 +146,66 @@ h2 {
 .buyButton:hover {
   background-color: #2e4e35;
   border: 3px solid #2e4e35;
+}
+
+/*custom soap page*/
+#customsoap .described {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
+.headnote,
+.heartnote,
+.basenote,
+.shapes,
+.colour {
+  display: flex;
+}
+#colour1 {
+  width: 2%;
+  height: 50%;
+  background-color: #e2e3dd;
+}
+#colour2 {
+  width: 2%;
+  height: 50%;
+  background-color: black;
+}
+#colour3 {
+  width: 2%;
+  height: 50%;
+  background-color: #e4717a;
+}
+#colour4 {
+  width: 2%;
+  height: 50%;
+  background-color: #add8e6;
+}
+#colour5 {
+  width: 2%;
+  height: 50%;
+  background-color: #987bae;
+}
+#colour6 {
+  width: 2%;
+  height: 50%;
+  background-color: #ffa500;
+}
+#colour7 {
+  width: 2%;
+  height: 50%;
+  background-color: #74413e;
+}
+#colour8 {
+  width: 2%;
+  height: 50%;
+  background-color: #1e3f5a;
+}
+#colour9 {
+  width: 2%;
+  height: 50%;
+  background-color: #ffff00;
 }
 
 /* small tablet styles */
