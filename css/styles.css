@@ -18,8 +18,7 @@
 body,
 a,
 ul,
-li,
-h2 {
+li {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -79,6 +78,11 @@ nav > div > a:first-child {
   margin-right: 15px;
 }
 
+nav > div {
+  display: flex;
+  align-items: center;
+}
+
 /* ---footer--- */
 
 footer {
@@ -135,6 +139,7 @@ h2 {
   color: var(--bc1);
   font-weight: bold;
 }
+
 .buyButton {
   color: #fffce8;
   background-color: #558960;
@@ -158,8 +163,85 @@ h2 {
   margin: 5% auto;
 }
 
+/*custom soap page*/
+#customsoap .described {
+  display: grid;
+}
+.hidden {
+  display: none;
+}
+.headnote,
+.heartnote,
+.basenote,
+.shapes,
+.colour {
+  display: flex;
+}
+#colour1 {
+  width: 2%;
+  height: 50%;
+  background-color: #e2e3dd;
+}
+#colour2 {
+  width: 2%;
+  height: 50%;
+  background-color: black;
+}
+#colour3 {
+  width: 2%;
+  height: 50%;
+  background-color: #e4717a;
+}
+#colour4 {
+  width: 2%;
+  height: 50%;
+  background-color: #add8e6;
+}
+#colour5 {
+  width: 2%;
+  height: 50%;
+  background-color: #987bae;
+}
+#colour6 {
+  width: 2%;
+  height: 50%;
+  background-color: #ffa500;
+}
+#colour7 {
+  width: 2%;
+  height: 50%;
+  background-color: #74413e;
+}
+#colour8 {
+  width: 2%;
+  height: 50%;
+  background-color: #1e3f5a;
+}
+#colour9 {
+  width: 2%;
+  height: 50%;
+  background-color: #ffff00;
+}
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
+  #customsoap .described {
+    display: grid;
+    margin: 2%;
+  }
+  .described h1 {
+    grid-column: 1/-1;
+  }
+  .described div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .described > div > img {
+    width: 14em;
+  }
+  .process {
+    display: grid;
+  }
 }
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
@@ -253,7 +335,7 @@ h2 {
 }
 
 .landing-page-option-container:last-child > div {
-  top: 27%;
+  top: 30%;
 }
 
 .primary-button {
@@ -308,21 +390,44 @@ h2 {
 }
 
 #about-front-container {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 6vw 100px 6vw;
+  background-image: url("https://ethordesign.com/files/customiseme/plant.webp");
+  background-repeat: no-repeat;
+  background-position: right top;
 }
 
 #about-front-container > div {
   display: flex;
+  justify-content: space-between;
+  margin: 40px 6vw 100px 6vw;
+  padding-bottom: 300px;
 }
 
 #about-front-container > div > div {
+  display: flex;
+}
+
+#about-front-container > div > div > div {
   margin-left: 30px;
 }
 
-#about-front-container > div > div h3 {
-  font-size: 2rem;
+#about-front-container h3 {
+  font-size: 1.8rem;
   margin: 0;
   line-height: 2.3rem;
+}
+
+#about-front-container p {
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 1000px) {
+  #about-front-container > div {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+  }
+
+  #about-front-container > div > div {
+    width: 300px;
+  }
 }
