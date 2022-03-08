@@ -18,7 +18,8 @@
 body,
 a,
 ul,
-li {
+li,
+h2 {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -77,11 +78,32 @@ nav > div > a {
 nav > div > a:first-child {
   margin-right: 15px;
 }
+
+/* ---footer--- */
+
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 3% auto;
+  border-top: solid 1px var(--bc1);
+  padding-top: 5vw;
+}
+
+footer a {
+  color: var(--bc1);
+}
+
 /* ---headings--- */
 h1 {
   display: block;
   text-align: center;
   font-size: var(--heading-1);
+}
+
+h2 {
+  font-size: var(--heading-2);
 }
 
 /* ---product list pages--- */
