@@ -219,8 +219,8 @@ h1 {
 
 .secondary-button-front {
   color: #fffce8;
-  padding: 20px 36px;
-  font-size: 1.3rem;
+  padding: 14px 30px;
+  font-size: 1rem;
   border-radius: 10px;
   border: 3px solid #fffce8;
 }
@@ -270,4 +270,6 @@ h1 {
 
 #about-front-container > div > div h3 {
   font-size: 2rem;
+  margin: 0;
+  line-height: 2.3rem;
 }
