@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+
 /* varialbes */
 :root {
   /* colors */
@@ -27,15 +29,11 @@ li {
   box-sizing: border-box;
   /* outline: 2px dotted red; */
 }
-main {
-  /*to center a div set the width of the element and set margin to auto*/
-  max-width: 30vw;
-  margin: auto;
-}
 
 /* fonts */
-
-/* mobil first styles */
+body {
+  font-family: "Open Sans", sans-serif;
+}
 
 /* Navigation bar styles*/
 nav {
@@ -77,7 +75,20 @@ nav > div > a:first-child {
   margin-right: 15px;
 }
 
+/* ---product list pages--- */
 
+#produtsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 5%;
+  /*to center a div set the width of the element and set margin to auto*/
+  max-width: 80%;
+  margin: auto;
+}
+.productImg {
+  width: 100%;
+  filter: drop-shadow(18px 18px 10px rgb(39, 37, 37));
+}
 
 /* small tablet styles */
 @media screen and (min-width: 620px) {
