@@ -117,7 +117,8 @@ h2 {
   margin: 3% auto;
 }
 .productImg {
-  width: 100%;
+  margin: 3vw auto;
+  max-width: 100%;
   filter: drop-shadow(18px 18px 10px rgb(39, 37, 37));
 }
 .producTitle {
