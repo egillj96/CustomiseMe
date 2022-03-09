@@ -122,13 +122,15 @@ footer a {
 #produtsCont {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 10%;
+  column-gap: 6vw;
+  row-gap: 3vw;
   /*to center a div set the width of the element and set margin to auto*/
   max-width: 85%;
-  margin: 3% auto;
+  margin: auto;
 }
+
 .productImg {
-  margin: 3vw auto;
+  margin: auto;
   max-width: 100%;
   filter: drop-shadow(18px 18px 10px rgb(39, 37, 37));
 }
