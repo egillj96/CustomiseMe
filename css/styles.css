@@ -185,7 +185,7 @@ footer a {
   grid-template-columns: repeat(2, 35%);
   justify-content: space-evenly;
   place-items: center;
-  gap: 10vw;
+  gap: 5vw;
   max-width: 80%;
   margin: 5% auto;
 }
@@ -193,7 +193,7 @@ footer a {
 #singleCont article {
   display: flex;
   flex-direction: column;
-  row-gap: 2vw;
+  row-gap: 1vw;
 }
 #singleCont img {
   max-width: 100%;
