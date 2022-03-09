@@ -31,12 +31,15 @@ function handleData(soaps) {
         // 2. Clone template
         const clone = template.cloneNode(true);
         // 4. Populated with data
+        console.log(soap._id);
+        clone.querySelector("a").setAttribute("href", `product.html?id=${soap._id}`);
+
         clone.querySelector(".producTitle").textContent = soap.productname;
         clone.querySelector(".desc").textContent = soap.productgroup;
         clone.querySelector(".price").textContent = soap.price;
         clone.querySelector("img").src = soap.img_url;
         clone.querySelector("img").alt = soap.productname;
-        clone.querySelector("a").href = soap.id;
+
 
         // 5. Grap the parent
         const parent = document.querySelector("#produtsCont");

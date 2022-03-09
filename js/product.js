@@ -1,8 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
+//console.log(id);
 
-
-const url = "https://kea22-6016.restdb.io/rest/customiseme/" + id
+const url = "https://kea22-6016.restdb.io/rest/customiseme/" + id;
 
 const options = {
     headers: {
@@ -27,6 +27,7 @@ fetch(url, options)
     })
 
 function showProduct(soap) {
+    console.log(soap);
     document.querySelector(".producTitle").textContent = soap.productname;
     document.querySelector(".desc").textContent = soap.productgroup;
     document.querySelector(".price").textContent = soap.price;
