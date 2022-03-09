@@ -19,7 +19,8 @@
 body,
 a,
 ul,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -185,15 +186,15 @@ footer a {
   grid-template-columns: repeat(2, 35%);
   justify-content: space-evenly;
   place-items: center;
-  gap: 5vw;
-  max-width: 80%;
+  column-gap: 5vw;
+  max-width: 93%;
   margin: 5% auto;
 }
 
 #singleCont article {
   display: flex;
   flex-direction: column;
-  row-gap: 1vw;
+  row-gap: 2vw;
 }
 #singleCont img {
   max-width: 100%;
