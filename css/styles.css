@@ -5,11 +5,12 @@
   /* colors */
   --bc1: #558960;
   --bc2: #fffce8;
-  --secondary-button: #97252c;
+  --sec1: #97252c;
+  --sec2: #dda15e;
 
   /* I am still working in this formula to make responsive font */
   --heading-1: calc(2rem + 1vw);
-  --heading-2: bold calc(1.5rem + 6 * ((100vw - 320px) / 680));
+  --heading-2: bold calc(1rem + 6 * ((100vw - 320px) / 680));
   --heading-3: bold calc(1rem + 4 * ((100vw - 320px) / 680));
   --body-font-size: calc(1rem + 1 * ((100vw - 320px) / 680));
 }
@@ -83,26 +84,8 @@ nav > div {
   align-items: center;
 }
 
-/* ---footer--- */
-
-footer {
-  display: flex;
-  flex: 1 1 20%;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  max-width: 90%;
-  margin: 3% auto;
-  border-top: solid 1px var(--bc1);
-  padding-top: 5vw;
-}
-
-footer a {
-  color: var(--bc1);
-}
-
 /* ---headings--- */
-h1 {
+/* h1 {
   display: block;
   text-align: center;
   font-size: var(--heading-1);
@@ -112,6 +95,28 @@ h2 {
   font-size: var(--heading-2);
 }
 
+h3 {
+  font-size: var(--heading-3);
+} */
+
+/* ---footer--- */
+
+footer {
+  display: flex;
+  flex: 1 2 30%;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-around;
+  max-width: 90%;
+  margin: 3% auto;
+  border-top: solid 1px var(--bc1);
+  padding-top: 5vw;
+  gap: 3%;
+}
+
+footer a {
+  color: var(--bc1);
+}
 /* ---product list pages--- */
 
 #produtsCont {
@@ -129,7 +134,7 @@ h2 {
 }
 .producTitle {
   margin-bottom: 0%;
-  font-size: var(--heading-2);
+  /* font-size: var(--heading-2); */
 }
 .desc {
   color: dimgray;
@@ -140,9 +145,10 @@ h2 {
   font-weight: bold;
 }
 
+/* ---buttons--- */
 .buyButton {
   color: #fffce8;
-  background-color: #558960;
+  background-color: var(--bc1);
   padding: 12px 16px;
   font-size: 0.8rem;
   font-weight: bold;
@@ -154,13 +160,82 @@ h2 {
   background-color: #2e4e35;
   border: 3px solid #2e4e35;
 }
+
+.customisemeButton {
+  color: #fffce8;
+  background-color: var(--sec2);
+  padding: 12px 16px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid var(--sec2);
+}
+
+.customisemeButton:hover {
+  background-color: transparent;
+  color: var(--sec2);
+}
+
 /* ---single product page--- */
 
 #singleCont {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 35%);
+  justify-content: space-evenly;
+  place-items: center;
+  gap: 10vw;
   max-width: 80%;
   margin: 5% auto;
+}
+
+#singleCont article {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vw;
+}
+#singleCont img {
+  max-width: 100%;
+}
+
+#form1 {
+  margin: 1vw;
+}
+#quantity {
+  max-width: 3vw;
+  text-align: center;
+}
+
+/* ---icon section--- */
+#iconsWrap {
+  max-width: 96%;
+  margin: auto;
+  justify-content: space-evenly;
+  place-self: center;
+  display: grid;
+  grid-template-columns: repeat(3, 320px);
+  gap: 4%;
+}
+.iconsCont {
+  display: flex;
+  gap: 5%;
+}
+.icons {
+  max-width: 30%;
+  color: var(--bc1);
+}
+
+/* ---related products--- */
+
+.related {
+  margin: 6vw auto;
+  max-width: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.related h2:first-of-type {
+  text-align: center;
+  grid-column: 1/-1;
 }
 
 /*custom soap page*/
