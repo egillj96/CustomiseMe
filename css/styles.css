@@ -316,6 +316,7 @@ h2 {
   font-size: 5vw;
   color: #fffce8;
   text-align: left;
+  line-height: 4.5rem;
 }
 
 .landing-page-option-container h2 {
@@ -324,7 +325,7 @@ h2 {
 }
 
 .landing-page-option-container:last-child > div {
-  top: 30%;
+  top: 24%;
 }
 
 .primary-button {
@@ -387,8 +388,7 @@ h2 {
 #about-front-container > div {
   display: flex;
   justify-content: space-between;
-  margin: 40px 6vw 100px 6vw;
-  padding-bottom: 300px;
+  margin: 40px 6vw 150px 6vw;
 }
 
 #about-front-container > div > div {
@@ -419,4 +419,13 @@ h2 {
   #about-front-container > div > div {
     width: 300px;
   }
+}
+
+#how-to-container {
+  margin: 40px 6vw 100px 6vw;
+}
+
+#how-to-container h2 {
+  font-size: 3rem;
+  font-weight: 400;
 }
