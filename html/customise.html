@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CustomiseMe</title>
     <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
+    
+
     <script
       src="https://kit.fontawesome.com/137a8d32f0.js"
       crossorigin="anonymous"
@@ -91,8 +94,33 @@
           benefits you can review in our <a href="" rel="">ingredients page</a>.
         </p>
         <h2>Essential oils</h2>
-        <img src="../images/icons/info.svg" alt="" />
         
+        <!-- Button to open the modal login form -->
+        <div class="oil-instruction">
+          <button class="questionmark"
+            onclick="document.getElementById('id01').style.display='block'"
+          ><img src="../images/icons/info.svg" alt="" />          
+          </button>     
+
+          <div>           
+
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+              <!-- Instruction Content -->
+              <form class="modal-content animate" action="/action_page.php">
+               
+
+                <div class="container">
+                  <h2>HEAD NOTE</h2>
+                </div>
+                </form>
+           </div>    
         <p>Select a maximum of 2 oils</p>
         <h3>Top(Head) Notes</h3>
         <p>
@@ -190,6 +218,7 @@
       </div>
     </main>
     <footer></footer>
+    <script src="../js/popup.js"></script>
     <script src="../js/navbar.js"></script>
   </body>
 </html>

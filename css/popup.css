@@ -128,3 +128,23 @@ span.psw {
     width: 100%;
   }
 }
+.questionmark {
+  background-color: white;
+ /*  background-image: url(../images/icons/info.svg);
+  background-repeat: no-repeat; */
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+ 
+  
+}
+.oil-instruction button {
+  max-width: 200px;
+  height: 200px;
+  
+  
+}
