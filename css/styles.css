@@ -508,6 +508,11 @@ footer a {
 }
 
 /* ABOUT US PAGE starts here */
+#aboutus-page-container {
+  display: flex;
+  justify-content: center;  
+ 
+}
 .aboutus-page-option-container {
     position: relative;
     width: 100vw;
@@ -530,7 +535,17 @@ footer a {
   color: #fffce8;
   text-align: left;
 } 
+@media screen and (min-width: 601px) {
+.aboutus-page-option-container h1 {
+    font-size: 80px;
+  }
+}
 
+@media screen and (max-width: 600px) {
+.aboutus-page-option-container h1 {
+    font-size: 30px;
+  }
+}
 /* ABOUT US PAGE finishes here */
 #how-to-container {
   margin: 40px 6vw 100px 6vw;
