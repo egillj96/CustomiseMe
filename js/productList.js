@@ -24,13 +24,20 @@ fetch(url, options)
 
 function handleData(soaps) {
     soaps.forEach(soap => {
-        //console.log(soap);
+        console.log(soap);
         // 1. Grap the template
         const template = document.querySelector("template").content;
 
         // 2. Clone template
         const clone = template.cloneNode(true);
         // 4. Populated with data
+        clone.querySelector(".producTitle").textContent = soap.productname;
+        clone.querySelector(".desc").textContent = soap.productgroup;
+        clone.querySelector(".price").textContent = soap.price;
+        clone.querySelector("img").src = soap.img_url;
+        clone.querySelector("img").alt = soap.productname;
+        clone.querySelector("a").href = soap.id;
+
         // 5. Grap the parent
         const parent = document.querySelector("#produtsCont");
         // 6. Appent to the DOM

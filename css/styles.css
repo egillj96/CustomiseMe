@@ -85,12 +85,12 @@ nav > div {
 }
 
 /* ---headings--- */
-/* h1 {
+h1 {
   display: block;
   text-align: center;
-  font-size: var(--heading-1);
+  /* font-size: var(--heading-1); */
 }
-
+/*
 h2 {
   font-size: var(--heading-2);
 }
@@ -142,7 +142,7 @@ footer a {
   color: dimgray;
   margin: 0%;
 }
-.price {
+.priceformat {
   color: var(--bc1);
   font-weight: bold;
 }
