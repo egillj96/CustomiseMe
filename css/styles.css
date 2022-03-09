@@ -19,7 +19,8 @@
 body,
 a,
 ul,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -85,12 +86,12 @@ nav > div {
 }
 
 /* ---headings--- */
-/* h1 {
+h1 {
   display: block;
   text-align: center;
-  font-size: var(--heading-1);
+  /* font-size: var(--heading-1); */
 }
-
+/*
 h2 {
   font-size: var(--heading-2);
 }
@@ -122,13 +123,15 @@ footer a {
 #produtsCont {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 10%;
+  column-gap: 6vw;
+  row-gap: 3vw;
   /*to center a div set the width of the element and set margin to auto*/
   max-width: 85%;
-  margin: 3% auto;
+  margin: auto;
 }
+
 .productImg {
-  margin: 3vw auto;
+  margin: auto;
   max-width: 100%;
   filter: drop-shadow(18px 18px 10px rgb(39, 37, 37));
 }
@@ -140,7 +143,7 @@ footer a {
   color: dimgray;
   margin: 0%;
 }
-.price {
+.priceformat {
   color: var(--bc1);
   font-weight: bold;
 }
@@ -183,8 +186,8 @@ footer a {
   grid-template-columns: repeat(2, 35%);
   justify-content: space-evenly;
   place-items: center;
-  gap: 10vw;
-  max-width: 80%;
+  column-gap: 5vw;
+  max-width: 93%;
   margin: 5% auto;
 }
 
