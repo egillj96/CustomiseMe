@@ -30,6 +30,7 @@ function showProduct(soap) {
     console.log(soap);
     document.querySelector(".producTitle").textContent = soap.productname;
     document.querySelector(".desc").textContent = soap.productgroup;
+    document.querySelector("#essentials").textContent = soap.essential_oils;
     document.querySelector(".price").textContent = soap.price;
     document.querySelector(".productImg").src = soap.img_url;
     document.querySelector(".productImg").alt = soap.productname;
