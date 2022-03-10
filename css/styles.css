@@ -19,7 +19,8 @@
 body,
 a,
 ul,
-li {
+li,
+p {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -85,12 +86,12 @@ nav > div {
 }
 
 /* ---headings--- */
-/* h1 {
+h1 {
   display: block;
   text-align: center;
-  font-size: var(--heading-1);
+  /* font-size: var(--heading-1); */
 }
-
+/*
 h2 {
   font-size: var(--heading-2);
 }
@@ -122,13 +123,15 @@ footer a {
 #produtsCont {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
-  gap: 10%;
+  column-gap: 6vw;
+  row-gap: 3vw;
   /*to center a div set the width of the element and set margin to auto*/
   max-width: 85%;
-  margin: 3% auto;
+  margin: auto;
 }
+
 .productImg {
-  margin: 3vw auto;
+  margin: auto;
   max-width: 100%;
   filter: drop-shadow(18px 18px 10px rgb(39, 37, 37));
 }
@@ -140,7 +143,7 @@ footer a {
   color: dimgray;
   margin: 0%;
 }
-.price {
+.priceformat {
   color: var(--bc1);
   font-weight: bold;
 }
@@ -183,8 +186,8 @@ footer a {
   grid-template-columns: repeat(2, 35%);
   justify-content: space-evenly;
   place-items: center;
-  gap: 10vw;
-  max-width: 80%;
+  column-gap: 5vw;
+  max-width: 93%;
   margin: 5% auto;
 }
 
@@ -245,57 +248,72 @@ footer a {
 .hidden {
   display: none;
 }
-.headnote,
-.heartnote,
-.basenote,
-.shapes,
-.colour {
+
+/* HIDE RADIO */
+[type="radio"] {
+  border: var(--bc1);
+  position: absolute;
+  padding: 16px 32px;
+  margin: 4px 2px;
+  width: max-content;
+  opacity: 0;
+}
+
+/* IMAGE STYLES */
+[type="radio"] + img {
+  cursor: pointer;
+}
+
+/* CHECKED STYLES */
+[type="radio"]:checked + img {
+  outline: 3px solid var(--bc1);
+}
+
+.basenote > label > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.headnote > label > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.heartnote > label > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.shapes > label > img {
+  width: 40px;
+  height: 40px;
+}
+.color > label > img {
+  width: 40px;
+  height: 40px;
+}
+.infoicon {
+  width: 20px;
+  height: 20px;
+}
+label {
+  font-size: 12px;
+}
+.oilinfo {
   display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 10px;
 }
-#colour1 {
-  width: 2%;
-  height: 50%;
-  background-color: #e2e3dd;
-}
-#colour2 {
-  width: 2%;
-  height: 50%;
-  background-color: black;
-}
-#colour3 {
-  width: 2%;
-  height: 50%;
-  background-color: #e4717a;
-}
-#colour4 {
-  width: 2%;
-  height: 50%;
-  background-color: #add8e6;
-}
-#colour5 {
-  width: 2%;
-  height: 50%;
-  background-color: #987bae;
-}
-#colour6 {
-  width: 2%;
-  height: 50%;
-  background-color: #ffa500;
-}
-#colour7 {
-  width: 2%;
-  height: 50%;
-  background-color: #74413e;
-}
-#colour8 {
-  width: 2%;
-  height: 50%;
-  background-color: #1e3f5a;
-}
-#colour9 {
-  width: 2%;
-  height: 50%;
-  background-color: #ffff00;
+[type="submit"] {
+  background-color: var(--bc1);
+  color: var(--bc2);
+  width: 100%;
+  font-size: 22px;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  border: 1px solid var(--bc1);
+  border-radius: 20px;
 }
 
 /* small tablet styles */
@@ -306,6 +324,8 @@ footer a {
   }
   .described h1 {
     grid-column: 1/-1;
+    margin-left: 15%;
+    margin-right: 5%;
   }
   .described div {
     display: grid;
@@ -313,13 +333,63 @@ footer a {
   }
   .described > div > img {
     width: 14em;
+    margin-left: 15%;
+  }
+  .described > div > p {
+    margin-right: 10%;
   }
   .process {
     display: grid;
+    margin-left: 5%;
+    margin-right: 10%;
+  }
+  .headnote,
+  .heartnote,
+  .basenote,
+  .shapes,
+  .color {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
   }
 }
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
+  .hidden {
+    display: block;
+  }
+  aside {
+    border: 3px solid var(--bc1);
+    border-radius: 20px;
+    padding: 2%;
+    width: 40%;
+    padding-left: 0.5rem;
+    margin-left: 0.5rem;
+    float: right;
+  }
+  .customsoap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+  .chosenheadnote,
+  .chosenhearnote,
+  .chosenbasnote {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  .chosenshape,
+  .chosencolor {
+    width: 50px;
+    height: 50px;
+  }
+  .customisedsoap {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 /* destop styles */

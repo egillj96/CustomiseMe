@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <META NAME="robots" CONTENT="noindex,nofollow">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/popup.css">
     <script src="https://kit.fontawesome.com/137a8d32f0.js" crossorigin="anonymous"></script>
     <title>Product List</title>
 </head>
@@ -14,22 +15,66 @@
 
 <body>
     <header>
-        <!-- Egill is going to do the navigation to copy in the rest of the pages -->
         <nav class="topnav">
             <a href="index.html">
-                <img src="../images/customiseme-logo.svg" alt="logo" width="120" />
+                <img src="../images/customiseme-logo.svg" alt="logo" width="100" />
             </a>
             <ul>
-                <li><a href="../html/productList.html">Products</a></li>
-                <li><a href="../html/workshops.html">Workshops</a></li>
-                <li><a href="../html/customise.html">Make a custom soap</a></li>
-                <li><a href="../html/about.html">About us</a></li>
+                <li><a href="html/productList.html">Products</a></li>
+                <li><a href="workshops.html">Workshops</a></li>
+                <li><a href="html/customise.html">Make a custom soap</a></li>
+                <li><a href="html/aboutus.html">About us</a></li>
             </ul>
             <div>
-                <a href="">Sign in</a>
+                <button onclick="document.getElementById('id01').style.display='block'">
+                    Login
+                </button>
+                <!-- <a href="" onclick="document.getElementById('id01').style.display='block'" >Sign in</a> -->
+                <!-- FIrst Div -->
+
+                <div>
+                    <!-- Button to open the modal login form -->
+
+                    <!-- The Modal -->
+                    <div id="id01" class="modal">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+
+                        <!-- Modal Content -->
+                        <form class="modal-content animate" action="/action_page.php">
+                            <div class="imgcontainer">
+                                <img src="../images/small_logo.svg" alt="Avatar" class="avatar" />
+                            </div>
+
+                            <div class="container">
+                                <label for="uname"><b>Username</b></label>
+                                <input type="text" placeholder="Enter Username" name="uname" required />
+
+                                <label for="psw"><b>Password</b></label>
+                                <input type="password" placeholder="Enter Password" name="psw" required />
+
+                                <button type="submit">Login</button>
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" />
+                                    Remember me
+                                </label>
+                            </div>
+
+                            <div class="container" style="background-color: #f1f1f1">
+                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                                    class="cancelbtn">
+                                    Cancel
+                                </button>
+                                <span class="psw">Forgot <a href="#">password?</a></span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- 2 Div -->
+
                 <a href="#" aria-label="cart"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
                 <a href="javascript:void(0);" class="burger-icon" aria-label="burger-icon">
-                    <i class="fa fa-bars fa-xl"></i>
+                    <i class="fa fa-bars fa-2xl"></i>
                 </a>
             </div>
         </nav>
@@ -37,14 +82,17 @@
     </header>
     <main>
         <div id="singleCont">
-            <img src="../images/calming_soap-removebg-preview.png" alt="">
+            <img class="productImg" src="" alt="">
             <article>
-                <h2 class="producTitle">ORGANIC CALMING</h2>
-                <p class="desc">SOAP BAR</p>
+                <h2 class="producTitle"></h2>
+                <p class="desc"></p>
                 <p class="prodDesc">A super refreshing soap
                     enriched with soothing
                     botanicals</p>
-                <p class="price">55.00 KR</p>
+                <p><strong>Ingredients: </strong> Coconut oil* (Cocos Nucifera oil), Olive oil* (Olea Europaea oil),
+                    Shea butter* (Butyrospermum Parkii), Distilled water.</p>
+                <p><strong>Essential oils: </strong> <span id="essentials"></span></p>
+                <p class="priceformat"><span class="price"></span>.00 KR</p>
                 <form id="form1" action=" ">
                     <label for="number">Quantity</label>
                     <input type="text" id="quantity" name="number" value="1"></input>
@@ -114,7 +162,9 @@
             <a><i class="fa-brands fa-instagram"></i></a>
         </div>
     </footer>
-
+    <script src="../js/product.js"></script>
+    <script src="../js/navbar.js"></script>
+    <script src="../js/popup.js"></script>
 </body>
 
 </html>
