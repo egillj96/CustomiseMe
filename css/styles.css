@@ -20,7 +20,8 @@ body,
 a,
 ul,
 li,
-p {
+p,
+h2 {
   margin: 0;
   padding: 0;
   text-decoration: none;
@@ -104,7 +105,6 @@ h3 {
 
 footer {
   display: flex;
-  flex: 1 2 30%;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: space-around;
@@ -328,7 +328,7 @@ label > img {
 }
 
 /* small tablet styles */
-@media screen and (min-width: 620px) {
+@media screen and (max-width: 620px) {
   #customsoap .described {
     display: grid;
     margin: 2%;
@@ -354,9 +354,24 @@ label > img {
     margin-left: 5%;
     margin-right: 10%;
   }
+
+  footer {
+    gap: 6vw;
+  }
+
+  footer div {
+    flex-basis: 55%;
+  }
 }
 /* large tablets and laptop styles */
-@media screen and (min-width: 960px) {
+@media screen and (max-width: 960px) and (min-width: 619px) {
+  footer {
+    gap: 6vw;
+  }
+
+  footer div {
+    flex-basis: 40%;
+  }
 }
 
 /* destop styles */
