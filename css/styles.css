@@ -259,11 +259,106 @@ footer a {
 }
 
 /*custom soap page*/
-#customsoap .described {
+#customisemain .described {
   display: grid;
 }
-.hidden {
-  display: none;
+.described-content {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+#stickynote {
+  border: 3px solid var(--bc1);
+  background-color: var(--bc2);
+  border-radius: 20px;
+  padding: 2%;
+  box-sizing: border-box;
+  position: fixed;
+  right: 5%;
+  width: 60%;
+  height: 40%;
+  float: right;
+  z-index: 0;
+  top: 40%;
+}
+.chosensoap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+}
+.headnote,
+.heartnote,
+.basenote,
+.shapes,
+.color {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.chosensoap > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid var(--bc1);
+}
+.chosensoapcolor > img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--bc1);
+}
+.chosensoapshape > img {
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--bc1);
+}
+.customsoap-for-small {
+  display: flex;
+  align-items: center;
+  gap: 6%;
+  justify-content: center;
+}
+.customsoap-for-small h6 {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  font-weight: lighter;
+  margin-bottom: 0%;
+}
+.customsoap-for-small p {
+  font-size: 0.6em;
+}
+.submit {
+  margin: 2%;
+  border: 3px solid var(--bc1);
+  padding: 5%;
+  border-radius: 20px;
+}
+.pricing-for-small {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr;
+  font-size: 0.8em;
+}
+.pricing-for-small > .finalprices {
+  display: flex;
+  align-items: center;
+}
+.pricing-for-small > .totalprice {
+  display: flex;
+  align-items: center;
+}
+.add-to-cart-for-small {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 0%;
+  justify-content: space-around;
+}
+#cart {
+  margin-bottom: 0%;
+  margin-top: 4%;
+  margin-right: 5%;
+  width: 60%;
 }
 
 /* HIDE RADIO */
@@ -316,7 +411,7 @@ footer a {
 label {
   font-size: 12px;
 }
-.oilinfo {
+#oilinfo {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
@@ -458,15 +553,15 @@ label {
   }
 }
 /* large tablets and laptop styles */
-@media screen and (max-width: 960px) and (min-width: 619px) {
+@media screen and (min-width: 619px) {
   footer {
     gap: 6vw;
   }
-  .hidden1 {
-    display: none;
-  }
   footer div {
     flex-basis: 40%;
+  }
+  #stickynote {
+    display: none;
   }
   .headnote,
   .heartnote,
@@ -510,7 +605,7 @@ label {
     font-size: 0.6em;
   }
   .submit {
-    margin: 2%;
+    margin: 0%;
     border: 3px solid var(--bc1);
     padding: 5%;
     border-radius: 20px;
@@ -542,31 +637,13 @@ label {
   }
 }
 /* large tablets and laptop styles */
-@media screen and (min-width: 960px) {
-  .hidden {
-    display: block;
-  }
-  #stickynote {
+@media screen and (max-width: 960px) {
+  .submit {
+    margin: 0%;
     border: 3px solid var(--bc1);
-    background-color: var(--bc2);
+    padding: 5%;
     border-radius: 20px;
-    padding: 2%;
-    box-sizing: border-box;
-    position: fixed;
-    right: 5%;
-    width: 60%;
-    height: 40%;
-    float: right;
-    z-index: 0;
-    top: 40%;
   }
-  .customsoap {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-  }
-
   .chosenheadnote,
   .chosenhearnote,
   .chosenbasnote {
@@ -605,11 +682,112 @@ label {
     grid-row: 4;
   }
 }
-
-/* destop styles */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 999px) {
+  #stickynote {
+    display: none;
+  }
 }
-
+/* destop styles */
+@media screen and (min-width: 1024px) {
+  .described h1 {
+    grid-column: 1/-1;
+  }
+  .described {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 5%;
+  }
+  .described-content > img {
+    width: 40%;
+    margin-right: 5%;
+  }
+  .described-content > p {
+    font-size: 1.1em;
+    margin-right: 5%;
+  }
+  .aside {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+  .process {
+    grid-column: 1/2;
+    float: left;
+    display: grid;
+    margin-left: 5%;
+    margin-right: 10%;
+    gap: 0%;
+  }
+  .process > p {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 0%;
+  }
+  .hidden1 {
+    display: none;
+  }
+  #stickynote {
+    grid-row: 1;
+    grid-column: 2/2;
+    display: block;
+    border: 3px solid var(--bc1);
+    background-color: var(--bc2);
+    border-radius: 20px;
+    padding: 2%;
+    box-sizing: border-box;
+    position: sticky;
+    right: 4%;
+    width: 100%;
+    height: 100%;
+    float: right;
+    z-index: 0;
+  }
+  .chosensoap {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1143px) {
+  .chosensoap,
+  .chosensoapcolor,
+  .chosensoapshape {
+    font-size: 1.3em;
+  }
+  .process > p {
+    font-size: 1em;
+  }
+  #stickynote {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1265px) {
+  .chosensoap,
+  .chosensoapcolor,
+  .chosensoapshape {
+    font-size: 1.4em;
+  }
+  .process > p {
+    font-size: 1em;
+  }
+  #stickynote {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 1265px) {
+  .chosensoap,
+  .chosensoapcolor,
+  .chosensoapshape {
+    font-size: 1.7em;
+  }
+  .process > p {
+    font-size: 1em;
+  }
+  #stickynote {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 1000px) {
   nav ul {
     display: none;
@@ -686,17 +864,16 @@ label {
   font-size: 5vw;
   color: #fffce8;
   text-align: left;
-  line-height: 6.3rem;
+  line-height: 4.5rem;
 }
 
 .landing-page-option-container h2 {
   font-size: 4vw;
   color: #fffce8;
-  margin-bottom: 60px;
 }
 
 .landing-page-option-container:last-child > div {
-  top: 43%;
+  top: 27%;
 }
 
 .primary-button {
@@ -738,6 +915,62 @@ label {
 .secondary-button:hover {
   color: white;
   background-color: #558960;
+}
+
+/* Front page styles */
+#landing-page-container {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  margin: 40px 6vw 100px 6vw;
+}
+
+.landing-page-option-container {
+  position: relative;
+  width: 45vw;
+}
+
+.landing-page-option-container > div {
+  position: absolute;
+  top: 15%;
+  left: 5%;
+}
+
+.landing-page-option-container img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.landing-page-option-container h1 {
+  font-size: 5vw;
+  color: #fffce8;
+  text-align: left;
+  line-height: 6.3rem;
+}
+
+.landing-page-option-container h2 {
+  font-size: 4vw;
+  color: #fffce8;
+  margin-bottom: 60px;
+}
+
+.landing-page-option-container:last-child > div {
+  top: 43%;
+}
+
+.primary-button {
+  color: #fffce8;
+  background-color: #558960;
+  padding: 14px 30px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 3px solid #558960;
+}
+
+.primary-button:hover {
+  background-color: #2e4e35;
+  border: 3px solid #2e4e35;
 }
 
 @media screen and (max-width: 1000px) {
@@ -804,6 +1037,32 @@ label {
   #about-front-container > div > div {
     width: 300px;
   }
+}
+
+#how-to-container {
+  margin: 40px 6vw 100px 6vw;
+}
+
+#how-to-container h2 {
+  font-size: 4vw;
+  font-weight: 400;
+}
+
+#how-to-container ol li {
+  list-style-type: decimal;
+  flex-direction: column;
+  margin-bottom: 40px;
+}
+
+#how-to-container ol li button {
+  color: #fffce8;
+  background-color: var(--bc1);
+  padding: 12px 16px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid #558960;
+  width: 180px;
 }
 
 /* ABOUT US PAGE starts here */
@@ -892,6 +1151,27 @@ label {
   font-size: 1vw;
 }
 
+#how-to-container ol li:nth-child(2) button {
+  color: #558960;
+  background-color: white;
+  padding: 12px 16px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  border-radius: 10px;
+  border: 3px solid #558960;
+  width: 180px;
+}
+
+#how-to-container li::marker {
+  font-size: 4.5vw;
+}
+
+#how-to-container li p {
+  white-space: normal;
+  width: 70%;
+  font-size: 1vw;
+}
+
 #how-to-container #steps-container {
   display: flex;
   justify-content: center;
@@ -915,6 +1195,10 @@ label {
   }
 }
 
+#workshops-front .next-workshop > div {
+  display: flex;
+  margin-top: 40px;
+}
 #workshops-front {
   background-image: url("https://ethordesign.com/files/customiseme/workshops-front.webp");
   background-repeat: no-repeat;
@@ -956,7 +1240,6 @@ label {
 
 #workshops-front .next-workshop > div {
   display: flex;
-  margin-top: 40px;
 }
 
 #workshops-front .next-workshop > div p {
