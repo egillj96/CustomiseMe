@@ -181,7 +181,6 @@
         </div>
       </aside>
 
-      <form name="customsoap" class="process">
         <h5>Starting at <span>DKK 55,00</span> per soap</h5>
         <p>Minimum order for a fully customised product is 4 bars of soap.</p>
         <h2>Ingredients</h2>
@@ -193,8 +192,34 @@
         </p>
         <div class="oilinfo">
           <h2>Essential oils</h2>
-          <img src="../images/icons/info.svg" alt="info" class="infoicon" />
         </div>
+        <!-- Button to open the modal login form -->
+        <div class="oil-instruction">
+          <button id="infoicon"
+            onclick="document.getElementById('id02').style.display='block'"
+          >          <img src="../images/icons/info.svg" alt="info" class="infoicon" />
+         
+          </button>     
+
+          <div>           
+
+            <!-- The Modal -->
+            <div id="id02" class="modal">
+              <span
+                onclick="document.getElementById('id02').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+              <!-- Instruction Content -->
+              <form class="modal-content animate" action="/action_page.php">
+               
+
+                <div class="container">
+                  <h2>HEAD NOTE</h2>
+                </div>
+                </form>
+           </div>    
         <p>Select a maximum of 2 oils</p>
         <h3>Top(Head) Notes</h3>
         <p>
@@ -202,6 +227,8 @@
           in a blend
         </p>
         <br />
+        <form name="customsoap" class="process">
+
         <div class="headnote">
           <label for="orange">
             Orange <br />
@@ -522,6 +549,6 @@
       </div>
     </footer>
     <script src="../js/navbar.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="../js/popup.js"></script>
   </body>
 </html>
