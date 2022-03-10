@@ -203,25 +203,32 @@ footer a {
   grid-template-columns: repeat(2, 35%);
   justify-content: space-evenly;
   place-items: center;
-  column-gap: 5vw;
-  max-width: 93%;
+  column-gap: 3vw;
+  max-width: 90%;
   margin: 5% auto;
 }
 
 #singleCont article {
   display: flex;
   flex-direction: column;
-  row-gap: 2vw;
+  row-gap: 1.5vw;
 }
+
+#singleCont article div {
+  display: flex;
+  justify-content: space-evenly;
+}
+#singleCont article .priceformat {
+  margin-bottom: 0%;
+}
+
 #singleCont img {
   max-width: 100%;
 }
 
-#form1 {
-  margin: 1vw;
-}
 #quantity {
-  max-width: 3vw;
+  max-width: 5vw;
+  margin-left: 2vw;
   text-align: center;
 }
 
