@@ -273,60 +273,23 @@ footer a {
 .heartnote,
 .basenote,
 .shapes,
-.colour {
+.color {
   display: flex;
-  justify-content: left;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 label > img {
   width: 50px;
-}
-.colour1 {
-  width: 2%;
-  height: 50%;
-  background-color: #e2e3dd;
-}
-#colour2 {
-  width: 2%;
-  height: 50%;
-  background-color: black;
-}
-#colour3 {
-  width: 2%;
-  height: 50%;
-  background-color: #e4717a;
-}
-#colour4 {
-  width: 2%;
-  height: 50%;
-  background-color: #add8e6;
-}
-#colour5 {
-  width: 2%;
-  height: 50%;
-  background-color: #987bae;
-}
-#colour6 {
-  width: 2%;
-  height: 50%;
-  background-color: #ffa500;
-}
-#colour7 {
-  width: 2%;
-  height: 50%;
-  background-color: #74413e;
-}
-#colour8 {
-  width: 2%;
-  height: 50%;
-  background-color: #1e3f5a;
-}
-#colour9 {
-  width: 2%;
-  height: 50%;
-  background-color: #ffff00;
+  height: 50px;
+  border-radius: 50%;
+  border: solid #558960;
 }
 
+[type="submit"] {
+  background-color: var(--bc1);
+  color: var(--bc2);
+}
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   #customsoap .described {
