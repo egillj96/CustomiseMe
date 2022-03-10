@@ -635,7 +635,42 @@ label {
       justify-content: center;
     }
   }
-
+  @media screen and (min-width:1143px) {
+    .chosensoap, .chosensoapcolor, .chosensoapshape{
+      font-size: 1.3em;
+    }
+    .process > p{
+      font-size: 1em;
+    
+    }
+    #stickynote{
+      width: 90%;
+    }
+  }
+  @media screen and (min-width:1265px) {
+    .chosensoap, .chosensoapcolor, .chosensoapshape{
+      font-size: 1.4em;
+    }
+    .process > p{
+      font-size: 1em;
+      
+    }
+    #stickynote{
+      width: 90%;
+    }
+  }
+  @media screen and (min-width:1265px) {
+    .chosensoap, .chosensoapcolor, .chosensoapshape{
+      font-size: 1.7em;
+    }
+    .process > p{
+      font-size: 1em;
+      
+    }
+    #stickynote{
+      width: 100%;
+    }
+  }
   @media screen and (max-width: 1000px) {
     nav ul {
       display: none;
