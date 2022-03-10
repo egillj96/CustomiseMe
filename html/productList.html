@@ -1,129 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <META NAME="robots" CONTENT="noindex,nofollow">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/popup.css">
-    <script src="https://kit.fontawesome.com/137a8d32f0.js" crossorigin="anonymous"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
+    <script
+      src="https://kit.fontawesome.com/137a8d32f0.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Product List</title>
-</head>
+  </head>
 
-
-<body>
+  <body>
     <header>
-        <nav class="topnav">
-            <a href="index.html">
-                <img src="../images/customiseme-logo.svg" alt="logo" width="100" />
-            </a>
-            <ul>
-                <li><a href="html/productList.html">Products</a></li>
-                <li><a href="workshops.html">Workshops</a></li>
-                <li><a href="html/customise.html">Make a custom soap</a></li>
-                <li><a href="html/aboutus.html">About us</a></li>
-            </ul>
-            <div>
-                <button onclick="document.getElementById('id01').style.display='block'">
-                    Login
-                </button>
-                <!-- <a href="" onclick="document.getElementById('id01').style.display='block'" >Sign in</a> -->
-                <!-- FIrst Div -->
+      <nav class="topnav">
+        <a href="../index.html">
+          <img src="../images/customiseme-logo.svg" alt="logo" width="100" />
+        </a>
+        <ul>
+          <li><a href="productList.html">Products</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="customise.html">Make a custom soap</a></li>
+          <li><a href="aboutus.html">About us</a></li>
+        </ul>
+        <div>
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+          >
+            Login
+          </button>
+          <!-- <a href="" onclick="document.getElementById('id01').style.display='block'" >Sign in</a> -->
+          <!-- FIrst Div -->
 
-                <div>
-                    <!-- Button to open the modal login form -->
+          <div>
+            <!-- Button to open the modal login form -->
 
-                    <!-- The Modal -->
-                    <div id="id01" class="modal">
-                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
-                            title="Close Modal">&times;</span>
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
 
-                        <!-- Modal Content -->
-                        <form class="modal-content animate" action="/action_page.php">
-                            <div class="imgcontainer">
-                                <img src="../images/small_logo.svg" alt="Avatar" class="avatar" />
-                            </div>
-
-                            <div class="container">
-                                <label for="uname"><b>Username</b></label>
-                                <input type="text" placeholder="Enter Username" name="uname" required />
-
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" required />
-
-                                <button type="submit">Login</button>
-                                <label>
-                                    <input type="checkbox" checked="checked" name="remember" />
-                                    Remember me
-                                </label>
-                            </div>
-
-                            <div class="container" style="background-color: #f1f1f1">
-                                <button type="button" onclick="document.getElementById('id01').style.display='none'"
-                                    class="cancelbtn">
-                                    Cancel
-                                </button>
-                                <span class="psw">Forgot <a href="#">password?</a></span>
-                            </div>
-                        </form>
-                    </div>
+              <!-- Modal Content -->
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <img
+                    src="../images/small_logo.svg"
+                    alt="Avatar"
+                    class="avatar"
+                  />
                 </div>
-                <!-- 2 Div -->
 
-                <a href="#" aria-label="cart"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
-                <a href="javascript:void(0);" class="burger-icon" aria-label="burger-icon">
-                    <i class="fa fa-bars fa-2xl"></i>
-                </a>
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input
+                    type="text"
+                    placeholder="Enter Username"
+                    name="uname"
+                    required
+                  />
+
+                  <label for="psw"><b>Password</b></label>
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required
+                  />
+
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" />
+                    Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color: #f1f1f1">
+                  <button
+                    type="button"
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn"
+                  >
+                    Cancel
+                  </button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
             </div>
-        </nav>
-        <h1>PRODUCTS</h1>
+          </div>
+          <!-- 2 Div -->
+
+          <a href="#" aria-label="cart"
+            ><i class="fa-solid fa-cart-shopping fa-lg"></i
+          ></a>
+          <a
+            href="javascript:void(0);"
+            class="burger-icon"
+            aria-label="burger-icon"
+          >
+            <i class="fa fa-bars fa-2xl"></i>
+          </a>
+        </div>
+      </nav>
+      <h1>PRODUCTS</h1>
     </header>
     <main>
-        <div id="produtsCont">
-            <template>
-                <div><a href="../html/product.html"><img class="productImg"
-                            src="http://www.kvalens.dk/customiseMe_images/calming_soap-removebg-preview.png"
-                            alt="Calming Soap"></a>
-                    <article>
-                        <h2 class="producTitle">ORGANIC CALMING</h2>
-                        <p class="desc">SOAP BAR</p>
-                        <p class="priceformat"><span class="price">55</span>.00 KR</p>
-                        <button type="button" class="buyButton">ADD TO CART</button>
-                    </article>
-                </div>
-            </template>
-        </div>
+      <div id="produtsCont">
+        <template>
+          <div>
+            <a href="../html/product.html"
+              ><img
+                class="productImg"
+                src="http://www.kvalens.dk/customiseMe_images/calming_soap-removebg-preview.png"
+                alt="Calming Soap"
+            /></a>
+            <article>
+              <h2 class="producTitle">ORGANIC CALMING</h2>
+              <p class="desc">SOAP BAR</p>
+              <p class="priceformat"><span class="price">55</span>.00 KR</p>
+              <button type="button" class="buyButton">ADD TO CART</button>
+            </article>
+          </div>
+        </template>
+      </div>
     </main>
     <footer>
-        <div> <img src="../images/small_logo.svg" alt="small_logo">
-            <p>co-creating with your request, <br> needs and wishes in mind.</p>
-        </div>
-        <div>
-            <h2>CustomiseMe ApS</h2>
-            <p><a><i class="fa-solid fa-house"></i></a> Falen 21D, 2TV 5000 Odense C</p>
-            <a><i class="fa-solid fa-at"></i> info@customiseme.dk</a>
-            <p>CVR: 42657603</p>
-        </div>
-        <div>
-            <ul>
-                <li><a href=""> Products</a></li>
-                <li><a href="">Workshops</a></li>
-                <li><a href="">Make a custom soap</a></li>
-                <li><a href="">About us</a></li>
-            </ul>
-        </div>
-        <div>
-            <h2>FOLLOW US</h2>
-            <a><i class="fa-brands fa-facebook-square"></i></a>
-            <a><i class="fa-brands fa-instagram"></i></a>
-        </div>
+      <div>
+        <img src="../images/small_logo.svg" alt="small_logo" />
+        <p>
+          co-creating with your request, <br />
+          needs and wishes in mind.
+        </p>
+      </div>
+      <div>
+        <h2>CustomiseMe ApS</h2>
+        <p>
+          <a><i class="fa-solid fa-house"></i></a> Falen 21D, 2TV 5000 Odense C
+        </p>
+        <a><i class="fa-solid fa-at"></i> info@customiseme.dk</a>
+        <p>CVR: 42657603</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href=""> Products</a></li>
+          <li><a href="">Workshops</a></li>
+          <li><a href="">Make a custom soap</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>FOLLOW US</h2>
+        <a><i class="fa-brands fa-facebook-square"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+      </div>
     </footer>
     <script src="../js/productList.js"></script>
     <script src="../js/navbar.js"></script>
     <script src="../js/popup.js"></script>
-
-</body>
-
+  </body>
 </html>
