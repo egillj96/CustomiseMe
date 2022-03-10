@@ -553,7 +553,7 @@ label {
   }
 }
 /* large tablets and laptop styles */
-@media screen and (min-width: 619px) {
+@media screen and (min-width: 621px) and (max-width: 959px) {
   footer {
     gap: 6vw;
   }
