@@ -127,8 +127,8 @@ footer {
   max-width: 90%;
   margin: 3% auto;
   border-top: solid 1px var(--bc1);
-  padding-top: 5vw;
-  gap: 3%;
+  padding-top: 3vw;
+  gap: 2vw;
 }
 
 footer a {
@@ -236,14 +236,14 @@ footer a {
 #iconsWrap {
   max-width: 96%;
   margin: auto;
-  justify-content: space-around;
-  flex-wrap: wrap;
   display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   gap: 4%;
 }
 .iconsCont {
   display: flex;
-  flex-basis: 30%;
+  flex-basis: 20rem;
   gap: 5%;
 }
 .icons {
@@ -260,7 +260,7 @@ footer a {
   grid-template-columns: repeat(4, 1fr);
 }
 
-.related h2:first-of-type {
+.related h3:first-of-type {
   text-align: center;
   grid-column: 1/-1;
 }
@@ -479,13 +479,15 @@ label {
     grid-template-columns: 1fr;
     gap: 15vw;
   }
+
   footer {
     gap: 6vw;
   }
 
   footer div {
-    flex-basis: 55%;
+    flex: 1 1 14rem;
   }
+
   .chosensoap > img {
     width: 50px;
     height: 50px;
