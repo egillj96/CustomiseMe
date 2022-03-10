@@ -266,7 +266,7 @@ footer a {
 
 /* CHECKED STYLES */
 [type="radio"]:checked + img {
-  outline: 3px solid var(--bc1);
+  outline: 4px solid var(--bc1);
 }
 
 .basenote > label > img {
@@ -291,7 +291,6 @@ footer a {
 .color > label > img {
   width: 40px;
   height: 40px;
-  border: 2px solid var(--bc1);
 }
 .infoicon {
   width: 20px;
@@ -316,7 +315,11 @@ label {
   border: 1px solid var(--bc1);
   border-radius: 20px;
 }
-
+#customisemain {
+  display: grid;
+  margin-left: 2%;
+  margin-right: 2%;
+}
 /* small tablet styles */
 @media screen and (max-width: 620px) {
   #customsoap .described {
@@ -325,8 +328,6 @@ label {
   }
   .described h1 {
     grid-column: 1/-1;
-    margin-left: 15%;
-    margin-right: 5%;
   }
   .described div {
     display: grid;
@@ -334,10 +335,10 @@ label {
   }
   .described > div > img {
     width: 14em;
-    margin-left: 15%;
+    margin-left: 5%;
   }
   .described > div > p {
-    margin-right: 10%;
+    margin-right: 5%;
   }
   .process {
     display: grid;
@@ -360,11 +361,65 @@ label {
     justify-content: space-evenly;
     gap: 30px;
   }
-  .submit > .customsoap-for-small > img {
+  .chosensoap > img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    border: var(--bc1);
+    border: 2px solid var(--bc1);
+  }
+  .chosensoapcolor > img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--bc1);
+  }
+  .chosensoapshape > img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--bc1);
+  }
+  .customsoap-for-small {
+    display: flex;
+    align-items: center;
+    gap: 6%;
+    justify-content: center;
+  }
+  .customsoap-for-small h6 {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 0%;
+  }
+  .customsoap-for-small p {
+    font-size: 0.6em;
+  }
+  .submit {
+    margin: 2%;
+    border: 3px solid var(--bc1);
+    padding: 5%;
+    border-radius: 20px;
+  }
+  .pricing-for-small {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    font-size: 0.8em;
+  }
+  .pricing-for-small > .finalprices {
+    display: flex;
+    align-items: center;
+  }
+  .pricing-for-small > .totalprice {
+    display: flex;
+    align-items: center;
+  }
+  .add-to-cart-for-small {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0%;
+  }
+  #cart {
+    margin-bottom: 0%;
+  }
+  .amount {
   }
 }
 /* large tablets and laptop styles */
@@ -395,12 +450,7 @@ label {
     align-items: baseline;
     justify-content: center;
   }
-  .customsoap-for-small {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: baseline;
-    justify-content: center;
-  }
+
   .chosenheadnote,
   .chosenhearnote,
   .chosenbasnote {
