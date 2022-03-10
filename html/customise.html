@@ -202,8 +202,38 @@
         </p>
         <div class="oilinfo">
           <h2>Essential oils</h2>
-          <img src="../images/icons/info.svg" alt="info" class="infoicon" />
         </div>
+        <!-- Button to open the modal login form -->
+        <div class="oil-instruction">
+          <button id="infoicon"
+            onclick="document.getElementById('id02').style.display='block'"
+          >          <img src="../images/icons/info.svg" alt="info" class="infoicon" />
+         
+          </button>     
+
+          <div>           
+
+            <!-- The Modal -->
+            <div id="id02" class="modal">
+              <span
+                onclick="document.getElementById('id02').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+              <!-- Instruction Content -->
+              <form class="modal-content animate" action="/action_page.php">
+               
+
+                <div class="info-container">
+                  <h3>What are essential oils notes?</h2>
+                    <p>Essential oils are compounds extracted from plants. The oils capture the plant’s scent and flavor, or “essence.” Unique aromatic compounds give each essential oil its characteristic essence.</p>                  
+                  <p><span class="Hnotes">HEAD NOTES</span> are first impression scents, the one that you smell first when you breathe in a blend. Head notes have tiny, light molecules that evaporate quickly. These head note scents are often described as cheerful, bright, light, refreshing.</p>
+                  <p><span class="Hnotes">HEART NOTES</span>are scents that emerge from a blend right after the head notes have evaporated away and give perfumes their main body, their “heart”. Heart notes do not evaporate as quickly as head notes and linger on the skin longer</p>
+                  <p><span class="Hnotes">BASE NOTES</span> describe the oils that stay with you the longest. They have heavy molecules that take much longer to evaporate. Base notes add depth and richness to a blend.</p>
+                </div>
+                </form>
+           </div>    
         <p>Select a maximum of 2 oils</p>
         <h3>Top(Head) Notes</h3>
         <p>
@@ -212,6 +242,7 @@
         </p>
         <br />
         <form name="customsoap" class="process">
+
         <div class="headnote">
           <label for="orange">
             Orange <br />
@@ -547,6 +578,6 @@
       </div>
     </footer>
     <script src="../js/navbar.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="../js/popup.js"></script>
   </body>
 </html>

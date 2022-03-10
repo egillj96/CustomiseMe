@@ -69,7 +69,9 @@ span.psw {
   background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
   padding-top: 60px;
 }
-
+#infoicon {
+  background-color: transparent;
+}
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
@@ -90,7 +92,7 @@ span.psw {
 
 .close:hover,
 .close:focus {
-  color: red;
+  color: #97252c;
   cursor: pointer;
 }
 
