@@ -320,6 +320,7 @@ label {
   margin-left: 2%;
   margin-right: 2%;
 }
+
 /* small tablet styles */
 @media screen and (max-width: 620px) {
   #customsoap .described {
@@ -359,15 +360,89 @@ label {
   footer div {
     flex-basis: 55%;
   }
+  .chosensoap > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid var(--bc1);
+  }
+  .chosensoapcolor > img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--bc1);
+  }
+  .chosensoapshape > img {
+    width: 50px;
+    height: 50px;
+    border: 2px solid var(--bc1);
+  }
+  .customsoap-for-small {
+    display: flex;
+    align-items: center;
+    gap: 6%;
+    justify-content: center;
+  }
+  .customsoap-for-small h6 {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 0%;
+  }
+  .customsoap-for-small p {
+    font-size: 0.6em;
+  }
+  .submit {
+    margin: 2%;
+    border: 3px solid var(--bc1);
+    padding: 5%;
+    border-radius: 20px;
+  }
+  .pricing-for-small {
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    font-size: 0.8em;
+  }
+  .pricing-for-small > .finalprices {
+    display: flex;
+    align-items: center;
+  }
+  .pricing-for-small > .totalprice {
+    display: flex;
+    align-items: center;
+  }
+  .add-to-cart-for-small {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 0%;
+    justify-content: space-around;
+  }
+  #cart {
+    margin-bottom: 0%;
+    margin-top: 4%;
+    margin-right: 5%;
+    width: 60%;
+  }
+  .headnote,
+  .heartnote,
+  .basenote,
+  .shapes,
+  .color {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 30px;
 }
 /* large tablets and laptop styles */
 @media screen and (max-width: 960px) and (min-width: 619px) {
   footer {
     gap: 6vw;
   }
-
+  .hidden1 {
+    display: none;
+  }
   footer div {
-    flex-basis: 40%;}
+    flex-basis: 40%;
+  }
   .headnote,
   .heartnote,
   .basenote,
@@ -432,18 +507,18 @@ label {
     display: flex;
     align-items: baseline;
     margin-bottom: 0%;
+    justify-content: space-around;
   }
   #cart {
     margin-bottom: 0%;
-  }
-  .amount {
+    margin-top: 4%;
+    margin-right: 5%;
+    width: 60%;
   }
 }
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px) {
-  /* #customisemain {
-    display: grid;
-  } */
+
   .hidden {
     display: block;
   }
