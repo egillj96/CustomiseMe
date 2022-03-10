@@ -107,7 +107,7 @@
         </div>
       </nav>
     </header>
-    <main>
+    <main id="customisemain">
       <div class="described">
         <h1>Create your custom soap</h1>
         <div>
@@ -164,22 +164,22 @@
           />
         </div>
         <br />
-        <img
-          class="customisedsoap"
-          src="../images/create_your_soap-removebg-preview.png"
-          alt="customisedsoap"
-        />
-        <h5>Product total</h5>
-        <p>DKK <span>220</span></p>
-        <h5>Options total</h5>
-        <p>DKK<span>40</span></p>
-        <p class="amount">4</p>
-        <button class="addtocart">Add to cart</button>
-        <h4>Grand total</h4>
-        <p class="totalprice">DKK<span>260</span></p>
+        <div class="pricing">
+          <img
+            class="customisedsoap"
+            src="../images/create_your_soap-removebg-preview.png"
+            alt="customisedsoap"
+          />
+          <h5 class="producttotal">Product total</h5>
+          <p class="finalprices">DKK <span>220</span></p>
+          <h5 class="optionstotal">Options total</h5>
+          <p class="finalprices">DKK<span>40</span></p>
+          <p class="amount">4</p>
+          <button class="addtocart">Add to cart</button>
+          <h4 class="grandtotal">Grand total</h4>
+          <p class="totalprice">DKK<span>260</span></p>
+        </div>
       </aside>
-
-      <form name="customsoap" class="process">
         <h5>Starting at <span>DKK 55,00</span> per soap</h5>
         <p>Minimum order for a fully customised product is 4 bars of soap.</p>
         <h2>Ingredients</h2>
@@ -200,6 +200,7 @@
           in a blend
         </p>
         <br />
+        <form name="customsoap" class="process">
         <div class="headnote">
           <label for="orange">
             Orange <br />
@@ -433,13 +434,72 @@
           </label>
         </div>
         <div class="submit">
+          <h2>Your custom soap</h2>
+        <div>
+          <div class="customsoap-for-small">
+            <div class="chosensoap">
+            <h6>head note</h6>
+            <p>Sweet orange</p>
+            <img
+              class="chosenheadnote"
+              src="../images/orange.webp"
+              alt="chosenheadnote"
+            />
+            </div>
+            <div class="chosensoap">
+            <h6>heart note</h6>
+            <p>Cinnamon</p>
+            <img
+              class="chosenhearnote"
+              src="../images/cinnamon.webp"
+              alt="chosenhearnote"
+            />
+            </div>
+            <div class="chosensoap">
+            <h6>base note</h6>
+            <p>Cedarwood</p>
+            <img
+              class="chosenbasnote"
+              src="../images/cedarwood.webp"
+              alt="chosenbasnote"
+            />
+            </div>
+            <div class="chosensoapshape">
+            <h6>shape</h6>
+            <p>Heart</p>
+            <img
+              class="chosenshape"
+              src="../images/icons/heart.svg"
+              alt="chosenshape"
+            />
+            </div>
+            <div class="chosensoapcolor">
+            <h6>color</h6>
+            <p>Arctic white</p>
+            <img
+              class="chosencolor"
+              src="../images/icons/artic-white.svg"
+              alt="chosencolor"
+            />
+            </div>
+          </div>
+          <div class="add-to-cart-for-small" >
           <label for="cart"></label>
+          <p class="amount">4</p>
           <input
             type="submit"
             value="Add to cart"
             name="add to cart"
             id="cart"
           />
+          </div>
+          <div class="pricing-for-small">
+            <h5 class="producttotal">Product total</h5>
+            <p class="finalprices">DKK <span>220</span></p>
+            <h5 class="optionstotal">Options total</h5>
+            <p class="finalprices">DKK<span>40</span></p>
+            <h4 class="grandtotal">Grand total</h4>
+            <p class="totalprice">DKK<span>260</span></p>
         </div>
       </form>
     </main>
