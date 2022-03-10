@@ -267,25 +267,24 @@ footer a {
 
 /* CHECKED STYLES */
 [type="radio"]:checked + img {
-  outline: 2px solid #f00;
-}
-.headnote,
-.heartnote,
-.basenote,
-.shapes,
-.color {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+  outline: 3px solid var(--bc1);
 }
 
 label > img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  border: solid #558960;
 }
-
+.infoicon {
+  width: 20px;
+  height: 20px;
+}
+.oilinfo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  gap: 10px;
+}
 [type="submit"] {
   background-color: var(--bc1);
   color: var(--bc2);
@@ -316,6 +315,15 @@ label > img {
     display: grid;
     margin-left: 5%;
     margin-right: 10%;
+  }
+  .headnote,
+  .heartnote,
+  .basenote,
+  .shapes,
+  .color {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
   }
 }
 /* large tablets and laptop styles */
