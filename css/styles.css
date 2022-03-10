@@ -342,6 +342,12 @@ label {
     display: grid;
     margin-left: 5%;
     margin-right: 10%;
+    gap: 0%;
+  }
+  .process > p {
+    font-size: 12px;
+    font-weight: lighter;
+    margin-top: 0%;
   }
   .headnote,
   .heartnote,
@@ -362,10 +368,11 @@ label {
   aside {
     border: 3px solid var(--bc1);
     border-radius: 20px;
-    padding: 2%;
+    padding: 40px 40px 60px;
+    box-sizing: border-box;
+    position: fixed;
+    right: 5%;
     width: 40%;
-    padding-left: 0.5rem;
-    margin-left: 0.5rem;
     float: right;
   }
   .customsoap {
@@ -389,6 +396,27 @@ label {
   .customisedsoap {
     width: 150px;
     height: 150px;
+  }
+  .pricing {
+    display: grid;
+  }
+  .pricing > .customisedsoap {
+    grid-column: 1/-1;
+  }
+  .pricing > .producttotal,
+  .optionstotal,
+  .grandtotal {
+    grid-column: 1/2;
+  }
+  .finalprices {
+    grid-column: 2/2;
+  }
+  .pricing > button {
+    grid-column: 2 / span 2;
+    grid-row: 4;
+  }
+  .pricing > .amount {
+    grid-row: 4;
   }
 }
 
