@@ -248,8 +248,7 @@ footer a {
 .hidden {
   display: none;
 }
-#orange {
-}
+
 /* HIDE RADIO */
 [type="radio"] {
   border: var(--bc1);
@@ -312,6 +311,7 @@ label {
   width: 100%;
   font-size: 22px;
   margin-top: 5%;
+  margin-bottom: 10%;
   border: 1px solid var(--bc1);
   border-radius: 20px;
 }
