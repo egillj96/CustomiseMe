@@ -3,13 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="robots" content="noindex,nofollow" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CustomiseMe</title>
     <link rel="stylesheet" href="../css/styles.css" />
     <link rel="stylesheet" href="../css/popup.css" />
-    
-
     <script
       src="https://kit.fontawesome.com/137a8d32f0.js"
       crossorigin="anonymous"
@@ -19,16 +16,84 @@
     <header>
       <nav class="topnav">
         <a href="index.html">
-          <img src="../images/customiseme-logo.svg" alt="logo" width="120" />
+          <img src="../images/customiseme-logo.svg" alt="logo" width="100" />
         </a>
         <ul>
-          <li><a href="products.html">Products</a></li>
+          <li><a href="html/productList.html">Products</a></li>
           <li><a href="workshops.html">Workshops</a></li>
-          <li><a href="customise.html">Make a custom soap</a></li>
-          <li><a href="about.html">About us</a></li>
+          <li><a href="html/customise.html">Make a custom soap</a></li>
+          <li><a href="html/aboutus.html">About us</a></li>
         </ul>
         <div>
-          <a href="">Sign in</a>
+          <button
+            onclick="document.getElementById('id01').style.display='block'"
+          >
+            Login
+          </button>
+          <!-- <a href="" onclick="document.getElementById('id01').style.display='block'" >Sign in</a> -->
+          <!-- FIrst Div -->
+
+          <div>
+            <!-- Button to open the modal login form -->
+
+            <!-- The Modal -->
+            <div id="id01" class="modal">
+              <span
+                onclick="document.getElementById('id01').style.display='none'"
+                class="close"
+                title="Close Modal"
+                >&times;</span
+              >
+
+              <!-- Modal Content -->
+              <form class="modal-content animate" action="/action_page.php">
+                <div class="imgcontainer">
+                  <img
+                    src="../images/small_logo.svg"
+                    alt="Avatar"
+                    class="avatar"
+                  />
+                </div>
+
+                <div class="container">
+                  <label for="uname"><b>Username</b></label>
+                  <input
+                    type="text"
+                    placeholder="Enter Username"
+                    name="uname"
+                    required
+                  />
+
+                  <label for="psw"><b>Password</b></label>
+                  <input
+                    type="password"
+                    placeholder="Enter Password"
+                    name="psw"
+                    required
+                  />
+
+                  <button type="submit">Login</button>
+                  <label>
+                    <input type="checkbox" checked="checked" name="remember" />
+                    Remember me
+                  </label>
+                </div>
+
+                <div class="container" style="background-color: #f1f1f1">
+                  <button
+                    type="button"
+                    onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn"
+                  >
+                    Cancel
+                  </button>
+                  <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- 2 Div -->
+
           <a href="#" aria-label="cart"
             ><i class="fa-solid fa-cart-shopping fa-lg"></i
           ></a>
@@ -37,12 +102,12 @@
             class="burger-icon"
             aria-label="burger-icon"
           >
-            <i class="fa fa-bars fa-xl"></i>
+            <i class="fa fa-bars fa-2xl"></i>
           </a>
         </div>
       </nav>
     </header>
-    <main id="customsoap">
+    <main>
       <div class="described">
         <h1>Create your custom soap</h1>
         <div>
@@ -134,91 +199,228 @@
           <img src="../images/bergamot.webp" alt="secondheadnote" />
           <h6>Rosemary</h6>
           <img src="../images/rosemary.webp" alt="thridheadnote" />
+      <form name="customsoap">
+        <div class="process">
+          <h5>Starting at <span>DKK 55,00</span> per soap</h5>
+          <p>Minimum order for a fully customised product is 4 bars of soap.</p>
+          <h2>Ingredients</h2>
+          <p>
+            Coconut oil* (Cocos Nucifera oil), Olive oil* (Olea Europaea oil),
+            Shea butter* (Butyrospermum Parkii), Distilled water. Their
+            individual benefits you can review in our
+            <a href="#" rel="">ingredients page</a>.
+          </p>
+          <h2>Essential oils</h2>
+          <img src="../images/icons/info.svg" alt="" />
+          <p>Select a maximum of 2 oils</p>
+          <h3>Top(Head) Notes</h3>
+          <p>
+            First impression scents, the one that you smell first when you
+            breathe in a blend
+          </p>
+          <div class="headnote">
+            <label for="orange">
+              Orange
+              <input type="radio" name="headnote" id="orange" value="orange" />
+              <img src="../images/orange.webp" alt="orange" />
+            </label>
+            <label for="bergamot">
+              Bergamot
+              <input
+                type="radio"
+                name="headnote"
+                id="bergamot"
+                value="bergamot"
+              />
+              <img src="../images/bergamot.webp" alt="bergamot" />
+            </label>
+            <label for="rosemary">
+              Rosemary
+              <input
+                type="radio"
+                name="headnote"
+                alt="rosemary"
+                id="rosemary"
+              />
+              <img src="../images/rosemary.webp" alt="" />
+            </label>
+          </div>
+          <h3>Middle(Heart) Notes</h3>
+          <p>
+            Scents that emerge from a blend right after the head notes have
+            evaporated away and give blends their main body
+          </p>
+          <div class="heartnote">
+            <label for="cinnamon">
+              Cinnamon
+              <input
+                type="radio"
+                name="heartnote"
+                alt="cinnamon"
+                id="cinnamon"
+              />
+              <img src="../images/cinnamon.webp" alt="cinnamon" />
+            </label>
+            <label for="ginger">
+              Ginger
+              <input type="radio" name="heartnote" alt="ginger" id="ginger" />
+              <img src="../images/ginger.webp" alt="ginger" />
+            </label>
+            <label for="levander">
+              Lavander
+              <input
+                type="radio"
+                name="heartnote"
+                alt="levander"
+                id="levander"
+              />
+              <img src="../images/levander.webp" alt="levander" />
+            </label>
+          </div>
+
+          <h3>Base Notes</h3>
+          <p>
+            The oils that stay with you the longest. They have heavy molecules
+            that take much longer to evaporate.
+          </p>
+          <div class="basenote">
+            <label for="cedarwood">
+              Cedarwood
+              <input
+                type="radio"
+                name="basenote"
+                alt="cedarwood"
+                id="cedarwood"
+              />
+              <img src="../images/cedarwood.webp" alt="cedarwood" />
+            </label>
+            <label for="sandalwood">
+              Sandalwood
+              <input
+                type="radio"
+                name="basenote"
+                alt="sandalwood"
+                id="sandalwood"
+              />
+              <img src="../images/sandalwood.webp" alt="sandalwood" />
+            </label>
+          </div>
+          <h2>Shape</h2>
+          <p>Select the type of your soap</p>
+          <div class="shapes">
+            <label for="rectangle">
+              Rectangle
+              <p>+5,00 DKK</p>
+              <input type="radio" name="shape" alt="rectangle" id="rectangle" />
+              <img src="../images/icons/rectangle.svg" alt="rectangle" />
+            </label>
+            <label for="oval">
+              Oval
+              <p>+5,00 DKK</p>
+              <input type="radio" name="shape" alt="oval" id="oval" />
+              <img src="../images/icons/oval.svg" alt="oval" />
+            </label>
+            <label for="round">
+              Round
+              <p>+5,00 DKK</p>
+              <input type="radio" name="shape" alt="round" id="round" />
+              <img src="../images/icons/circle.svg" alt="round" />
+            </label>
+            <label for="square">
+              Square
+              <p>+5,00 DKK</p>
+              <input type="radio" name="shape" alt="square" id="square" />
+              <img src="../images/icons/square.svg" alt="square" />
+            </label>
+            <label for="star">
+              Star
+              <p>+5,00 DKK</p>
+              <input type="radio" name="shape" alt="star" id="star" />
+              <img src="../images/icons/star.svg" alt="star" />
+            </label>
+            <label for="heart">
+              Heart
+              <p>+5,00 DKK</p>
+              <input type="radio" name="shape" alt="heart" id="heart" />
+              <img src="../images/icons/heart.svg" alt="heart" />
+            </label>
+            <label for="questionmark">
+              It does not matter
+              <p>0 DKK</p>
+              <input
+                type="radio"
+                name="shape"
+                alt="questionmark"
+                id="questionmark"
+              />
+              <img src="../images/icons/questionmark.svg" alt="questionmark" />
+            </label>
+          </div>
+          <h2>Colour</h2>
+          <p>Select the color of your soap</p>
+          <div class="colour">
+            <h6>Arctic white</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour1"></div>
+            <h6>Black</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour2"></div>
+            <h6>Candy pink</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour3"></div>
+            <h6>Light blue</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour4"></div>
+            <h6>Purple passion</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour5"></div>
+            <h6>Orange</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour6"></div>
+            <h6>Red iron</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour7"></div>
+            <h6>Marine blue</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour8"></div>
+            <h6>Yellow</h6>
+            <p>+5,00 DKK</p>
+            <div id="colour9"></div>
+          </div>
         </div>
-        <h3>Middle(Heart) Notes</h3>
-        <p>
-          Scents that emerge from a blend right after the head notes have
-          evaporated away and give blends their main body
-        </p>
-        <div class="heartnote">
-          <h6>Cinnamon</h6>
-          <img src="../images/cinnamon.webp" alt="firstheartnote" />
-          <h6>Ginger</h6>
-          <img src="../images/ginger.png" alt="secondheartnote" />
-          <h6>Lavander</h6>
-          <img src="../images/levander.webp" alt="thridheartnote" />
-        </div>
-        <h3>Base Notes</h3>
-        <p>
-          The oils that stay with you the longest. They have heavy molecules
-          that take much longer to evaporate.
-        </p>
-        <div class="basenote">
-          <h6>Cedarwood</h6>
-          <img src="../images/cedarwood.webp" alt="firstbasenote" />
-          <h6>Sandalwood</h6>
-          <img src="../images/sandalwood.webp" alt="secondbasenote" />
-        </div>
-        <h2>Shape</h2>
-        <p>Select the type of your soap</p>
-        <div class="shapes">
-          <h6>Rectangle</h6>
-          <p>+5,00 DKK</p>
-          <img src="../images/icons/rectangle.svg" alt="" />
-          <h6>Oval</h6>
-          <p>+5,00 DKK</p>
-          <img src="../images/icons/oval.svg" alt="" />
-          <h6>Round</h6>
-          <p>+5,00 DKK</p>
-          <img src="../images/icons/round.svg" alt="" />
-          <h6>Square</h6>
-          <p>+5,00 DKK</p>
-          <img src="../images/icons/square.svg" alt="" />
-          <h6>Star</h6>
-          <p>+5,00 DKK</p>
-          <img src="../images/icons/star.svg" alt="" />
-          <h6>Heart</h6>
-          <p>+5,00 DKK</p>
-          <img src="../images/icons/heart.svg" alt="" />
-          <h6>It does not matter</h6>
-          <img src="../images/icons/questionmark.svg" alt="" />
-        </div>
-        <h2>Colour</h2>
-        <p>Select the color of your soap</p>
-        <div class="colour">
-          <h6>Arctic white</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour1"></div>
-          <h6>Black</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour2"></div>
-          <h6>Candy pink</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour3"></div>
-          <h6>Light blue</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour4"></div>
-          <h6>Purple passion</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour5"></div>
-          <h6>Orange</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour6"></div>
-          <h6>Red iron</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour7"></div>
-          <h6>Marine blue</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour8"></div>
-          <h6>Yellow</h6>
-          <p>+5,00 DKK</p>
-          <div id="colour9"></div>
-        </div>
-        <h1>Related producs</h1>
-      </div>
+      </form>
     </main>
-    <footer></footer>
-    <script src="../js/popup.js"></script>
+    <footer>
+      <div>
+        <img src="../images/small_logo.svg" alt="small_logo" />
+        <p>
+          co-creating with your request, <br />
+          needs and wishes in mind.
+        </p>
+      </div>
+      <div>
+        <h2>CustomiseMe ApS</h2>
+        <p>
+          <a><i class="fa-solid fa-house"></i></a> Falen 21D, 2TV 5000 Odense C
+        </p>
+        <a><i class="fa-solid fa-at"></i> info@customiseme.dk</a>
+        <p>CVR: 42657603</p>
+      </div>
+      <div>
+        <ul>
+          <li><a href=""> Products</a></li>
+          <li><a href="">Workshops</a></li>
+          <li><a href="">Make a custom soap</a></li>
+          <li><a href="">About us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>FOLLOW US</h2>
+        <a><i class="fa-brands fa-facebook-square"></i></a>
+        <a><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </footer>
     <script src="../js/navbar.js"></script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
