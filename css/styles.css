@@ -291,6 +291,7 @@ footer a {
 .color > label > img {
   width: 40px;
   height: 40px;
+  border: 2px solid var(--bc1);
 }
 .infoicon {
   width: 20px;
@@ -317,7 +318,7 @@ label {
 }
 
 /* small tablet styles */
-@media screen and (min-width: 620px) {
+@media screen and (max-width: 620px) {
   #customsoap .described {
     display: grid;
     margin: 2%;
@@ -359,7 +360,7 @@ label {
     justify-content: space-evenly;
     gap: 30px;
   }
-  .submit > .customsoap > img {
+  .submit > .customsoap-for-small > img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -440,7 +441,7 @@ label {
 }
 
 /* destop styles */
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
 }
 
 @media screen and (max-width: 1000px) {
