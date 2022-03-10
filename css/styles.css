@@ -270,14 +270,35 @@ footer a {
   outline: 3px solid var(--bc1);
 }
 
-label > img {
+.basenote > label > img {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+.headnote > label > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.heartnote > label > img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.shapes > label > img {
+  width: 40px;
+  height: 40px;
+}
+.color > label > img {
+  width: 40px;
+  height: 40px;
+}
 .infoicon {
   width: 20px;
   height: 20px;
+}
+label {
+  font-size: 12px;
 }
 .oilinfo {
   display: flex;
@@ -288,7 +309,13 @@ label > img {
 [type="submit"] {
   background-color: var(--bc1);
   color: var(--bc2);
+  width: 100%;
+  font-size: 22px;
+  margin-top: 5%;
+  border: 1px solid var(--bc1);
+  border-radius: 20px;
 }
+
 /* small tablet styles */
 @media screen and (min-width: 620px) {
   #customsoap .described {
@@ -324,6 +351,7 @@ label > img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    gap: 30px;
   }
 }
 /* large tablets and laptop styles */
