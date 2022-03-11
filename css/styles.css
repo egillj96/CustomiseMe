@@ -1368,6 +1368,7 @@ label {
 
 #about-front-container p {
   white-space: nowrap;
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -1612,7 +1613,11 @@ label {
 #workshops-front > div > div:first-child p {
   margin-top: 0px;
   margin-bottom: 50px;
-  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.next-workshop > p {
+  font-size: 1rem;
 }
 
 @media screen and (max-width: 1000px) {
