@@ -424,11 +424,12 @@ footer a {
 label {
   font-size: 12px;
 }
-#oilinfo {
+.essentialoil {
   display: flex;
-  justify-content: flex-start;
   align-items: baseline;
-  gap: 10px;
+}
+#oilinfo {
+  display: grid;
 }
 [type="submit"] {
   background-color: var(--bc1);
@@ -636,7 +637,6 @@ label {
       grid-column: 1/2;
       float: left;
       display: grid;
-      margin-left: 5%;
       margin-right: 10%;
       gap: 0%;
     }
@@ -997,6 +997,9 @@ label {
     display: none;
   }
 }
+#stickynote {
+  display: none;
+}
 /* destop styles */
 @media screen and (min-width: 1024px) {
   .described h1 {
@@ -1019,19 +1022,40 @@ label {
   .aside {
     display: grid;
     grid-template-columns: 0.5fr 0.5fr;
+    row-gap: 0;
   }
   .process {
     grid-column: 1/2;
     float: left;
     display: grid;
-    margin-left: 5%;
     margin-right: 10%;
     gap: 0%;
+  }
+
+  .process > div > h2 {
+    font-size: 1.4em;
+    margin-top: 10%;
+    margin-bottom: 2%;
+  }
+  .process > div > h5 {
+    font-size: 1.3em;
+    font-weight: normal;
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
+  .process > div > h5 > span {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .process > div > p {
+    font-size: 1em;
+    font-weight: lighter;
   }
   .process > p {
     font-size: 12px;
     font-weight: lighter;
     margin-top: 0%;
+    margin-bottom: 3%;
   }
   .hidden1 {
     display: none;
@@ -1096,6 +1120,15 @@ label {
   }
   #stickynote {
     width: 100%;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    font-size: 2em;
   }
 }
 @media screen and (max-width: 1000px) {

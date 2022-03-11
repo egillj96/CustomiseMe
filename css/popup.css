@@ -47,7 +47,7 @@ img.avatar {
 }
 
 .container {
-  padding: 2vw 15vw
+  padding: 2vw 15vw;
 }
 
 span.psw {
@@ -132,7 +132,7 @@ span.psw {
 }
 .questionmark {
   background-color: white;
- /*  background-image: url(../images/icons/info.svg);
+  /*  background-image: url(../images/icons/info.svg);
   background-repeat: no-repeat; */
   border: none;
   color: white;
@@ -141,21 +141,14 @@ span.psw {
   align-items: center;
   justify-content: center;
   display: flex;
- 
-  
 }
 .oil-instruction button {
   max-width: 200px;
-  height: 200px;
-  
-  
 }
 .info-container {
   padding: 10vw;
   border: solid var(--sec2) 3px;
-  
 }
-
 
 .info-container p {
   padding-bottom: 1rem;
@@ -167,21 +160,17 @@ span.psw {
 }
 .introp {
   font-style: italic;
-  color: var(--sec2)
+  color: var(--sec2);
 }
 
 @media screen and (min-width: 1000px) {
-.info-container {
-
-  padding: 3vw 20vw;
+  .info-container {
+    padding: 3vw 20vw;
+  }
+  .info-container p {
+    font-size: 0.8rem;
+  }
 }
-.info-container p {
-  font-size: 0.8rem;
-}
-}
- 
-
-
 
 /* Instruction Content
               <form class="modal-content animate" action="/action_page.php">
